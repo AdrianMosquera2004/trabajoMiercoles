@@ -21,10 +21,10 @@ let productosBD=[
 //1.Creo una variable para almacenar la base sobre la cual voy a pintar
 let fila=document.getElementById("fila")
 productosBD.forEach(function(producto){
-    console.log(producto.nombre)
+/*    console.log(producto.nombre)
     console.log(producto.precio)
     console.log(producto.foto)
-
+*/
     //2.Pintando etiquetas
 
     //div con la clase col
@@ -42,16 +42,16 @@ productosBD.forEach(function(producto){
     foto.src=producto.foto
 
     //h4 con la clase text-center
-    let titulo=document.createElement("h2")
+    let titulo=document.createElement("h4")
     titulo.classList.add("text-center")
     titulo.textContent=producto.nombre
 
-    let precio=document.createElement("h4")
+    let precio=document.createElement("h5")
     precio.classList.add("text-center")
     precio.textContent=producto.precio
     
 
-    let descripcion=document.createElement("h3")
+    let descripcion=document.createElement("p")
     descripcion.classList.add("text-center")
     descripcion.textContent=producto.descripcion
 
@@ -72,4 +72,20 @@ productosBD.forEach(function(producto){
     tarjeta.appendChild(botonProductos)
     
 
+})
+
+//Rutina para apliar informacon del producto
+let filaContenedora=document.getElementById("fila")
+filaContenedora.addEventListener("click",function(evento){
+    if(evento.target.classList.contains("btn")){
+
+        console.log(evento.target.parentElement.querySelector("h4").textContent)
+        console.log(evento.target.parentElement.querySelector("img").src)
+
+        let fotoinfo=document.getElementById("fotoInfo")
+        fotoinfo
+
+        let modalinfo = new bootstrap.Modal(document.getElementById('modalinfo'))
+        modalinfo.show()
+    }
 })
