@@ -1,7 +1,6 @@
-//creando un arreglo de objetos
-
+export function llenarTienda(){
+    
 let productosBD=[
-
 
     {foto:'img/tienda1.jpg',nombre:"Camiseta",precio:50000,descripcion:"Camiseta SL 2.0"},
     {foto:'img/tienda2.jpg',nombre:"Pantalon",precio:145000,descripcion:"Pantalon White essentialst"},
@@ -65,27 +64,17 @@ productosBD.forEach(function(producto){
     //3. Padres E Hijos
     tarjeta.appendChild(foto)
     tarjeta.appendChild(titulo)
-    columna.appendChild(tarjeta)
-    fila.appendChild(columna)
     tarjeta.appendChild(precio)
     tarjeta.appendChild(descripcion)
+    columna.appendChild(tarjeta)
+    fila.appendChild(columna) 
     tarjeta.appendChild(botonProductos)
     
 
 })
 
-//Rutina para apliar informacon del producto
-let filaContenedora=document.getElementById("fila")
-filaContenedora.addEventListener("click",function(evento){
-    if(evento.target.classList.contains("btn")){
 
-        console.log(evento.target.parentElement.querySelector("h4").textContent)
-        console.log(evento.target.parentElement.querySelector("img").src)
 
-        let fotoinfo=document.getElementById("fotoInfo")
-        fotoinfo
+}
 
-        let modalinfo = new bootstrap.Modal(document.getElementById('modalinfo'))
-        modalinfo.show()
-    }
-})
+
