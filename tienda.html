@@ -24,26 +24,10 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled"></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled"><i class="bi bi-cart-check-fill"></i>
-                    <span class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger invisible">
-                        99+
+                    <a class="nav-link" href="#" id="vercarrito">
+                      <i class="bi bi-cart-fill icono"></i>    
+                      <span id="capsula" class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger invisible">
+                        +99
                       </span>
                     </a>
                   </li>
@@ -94,12 +78,38 @@
                         </div>
                     </div>
                     <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="limpiar">Limpiar</button>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                     <button type="button" class="btn btn-primary"id="botonadd">Añadir al carrito</button>
                     </div>
                 </div>
                 </div>
             </div>
+        </section>
+
+        </section>
+
+      <section>
+            <!-- Modal -->
+              <div class="modal fade" id="resumencompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Tienda 2Pac</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container" id="basecarro">
+
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </section>
 
 
