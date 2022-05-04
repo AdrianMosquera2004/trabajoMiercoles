@@ -1,7 +1,7 @@
 import {getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js" 
        
 
-let boton=document.getElementById("boton-registro")
+let boton=document.getElementById("botonregistro")
 let modalregistro=new bootstrap.Modal(document.getElementById('mensajeinformativo'))
 let textomodal=document.getElementById("mensajemodalinfo")
 
@@ -20,7 +20,7 @@ boton.addEventListener("click",function(evento){
         textomodal.textContent="Exito en el registro"
         modalregistro.show()
         let formulario=document.getElementById("formularioregistro")
-        formulario,reset()
+        formulario.reset()
         setTimeout(function(){
             modalregistro.hide()
         },2000)
@@ -31,7 +31,7 @@ boton.addEventListener("click",function(evento){
         const errorMessage = error.message;
         // ..
         console.log("Fallo " +errorMessage)
-        textomodal.textContent="Fallo en el registro "+errorMessage
+        textomodal.textContent="Fallo en el registro "
         modalregistro.show()
         
         setTimeout(function(){

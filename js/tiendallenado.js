@@ -11,7 +11,7 @@ let productosBD=[
     {foto:'img/tienda7.jpg',nombre:"Figura 2pac",precio:500000,descripcion:"Figura_2pac  Hail Mary"},
     {foto:'img/tienda8.jpg',nombre:"Cadena",precio:1000000,descripcion:"Cadena Hit Em Up"},
     {foto:'img/tienda9.jpg',nombre:"Zapato",precio:750000,descripcion:"Zapato HU NMD"},
-    {foto:'img/tienda10.jpg',nombre:"Cuadro",precio:600000,descripcion:"Cuadro Edition Special"}
+    {foto:'img/tienda10.jpg',nombre:"Cuadro",precio:600000,descripcion:"Cuadro Edition Special"},
 
 ]
 
@@ -47,7 +47,7 @@ productosBD.forEach(function(producto){
 
     let precio=document.createElement("h5")
     precio.classList.add("text-center")
-    precio.textContent=producto.precio
+    precio.textContent= "$" + producto.precio
     
 
     let descripcion=document.createElement("p")
