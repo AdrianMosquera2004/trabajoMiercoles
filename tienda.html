@@ -71,7 +71,7 @@
                                     <p id="descripcionInfo"></p>
                                     <div class="mb-3">
                                         <label class="exampleInputPassword1" class="form-label">Cantidad</label>
-                                        <input type="number" value="1" class="form-control" id="CantidadProducto">
+                                        <input type="number" min="1" value="1" class="form-control" id="CantidadProducto">
                                       </div>
                                 </div>
                             </div>
@@ -106,6 +106,8 @@
                       </div>
                     </div>
                     <div class="modal-footer">
+                      <div class="tex-center" id="total"></div>
+                      <button type="button" class="btn btn-warning" id="btndolar">USD</button>
                       <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
                       <button type="button" class="btn btn-primary">Comprar</button>
                     </div>

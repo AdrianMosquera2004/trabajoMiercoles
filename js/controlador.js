@@ -110,8 +110,21 @@ botonVercarrito.addEventListener("click",function(){
        fila.appendChild(columna2)
        base.appendChild(fila)
     })
+    let total = 0
+    carrito.forEach(function(producto){
+        total = total = Number(producto.cantidadPro * producto.precioPro)
+    })
 
+    let totalCompra = document.getElementById("total")
+    totalCompra.textContent = "Total: $" + total
 
+    let btbdolar = document.getElementById("btndolar")
+    btbdolar.addEventListener ("Click", function(){
+
+        let precioPro = total
+        let dolar = precioPro / 4000
+        totalCompra.textContent = "total dolares $" + dolar.toFixed(2)
+    })
 
     modalcompra.show()
 })
